@@ -9,28 +9,28 @@
     <li>Interface simples e interativa para navegação entre as páginas.</li>
     </ul>
 
-    <h2>Tecnologias Utilizadas</h2>
-    <ul>
-    <li><strong>React</strong>: Biblioteca JavaScript para construção da interface de usuário.</li>
-    <li><strong>React Router</strong>: Para navegação entre páginas.</li>
-    <li><strong>Swiper</strong>: Para slides e carrosséis interativos.</li>
-    <li><strong>Axios</strong>: Para fazer requisições HTTP à API de filmes.</li>
-    <li><strong>SCSS</strong>: Para estilização da aplicação.</li>
-    </ul>
+<h2>Tecnologias Utilizadas</h2>
+  <ul>
+  <li><strong>React</strong>: Biblioteca JavaScript para construção da interface de usuário.</li>
+  <li><strong>React Router</strong>: Para navegação entre páginas.</li>
+  <li><strong>Swiper</strong>: Para slides e carrosséis interativos.</li>
+  <li><strong>Axios</strong>: Para fazer requisições HTTP à API de filmes.</li>
+  <li><strong>SCSS</strong>: Para estilização da aplicação.</li>
+  </ul>
 
-    <h2>Como Executar o Projeto</h2>
-    <ol>
-    <li><strong>Clone o repositório</strong>:
-    <pre><code>git clone https://github.com/sucloudflare/brunao-movies.git</code></pre>
-    </li>
-    <li><strong>Instale as dependências</strong>: No diretório do projeto, execute:
-    <pre><code>npm install</code></pre>
-    </li>
-    <li><strong>Inicie a aplicação</strong>: Depois de instalar as dependências, inicie o servidor de desenvolvimento:
-    <pre><code>npm start</code></pre>
+ <h2>Como Executar o Projeto</h2>
+  <ol>
+   <li><strong>Clone o repositório</strong>:
+   <pre><code>git clone https://github.com/sucloudflare/brunao-movies.git</code></pre>
+  </li>
+  <li><strong>Instale as dependências</strong>: No diretório do projeto, execute:
+  <pre><code>npm install</code></pre>
+  </li>
+  <li><strong>Inicie a aplicação</strong>: Depois de instalar as dependências, inicie o servidor de desenvolvimento:
+  <pre><code>npm start</code></pre>
             A aplicação estará disponível em <strong>http://localhost:3000</strong>.
-    </li>
-    </ol>
+  </li>
+  </ol>
 
   <h2>Como Contribuir</h2>
   <p>Se você deseja contribuir com melhorias ou correções para o projeto, siga os passos abaixo:</p>
