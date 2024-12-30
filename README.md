@@ -32,28 +32,29 @@
     </li>
     </ol>
 
-    <h2>Como Contribuir</h2>
-    <p>Se você deseja contribuir com melhorias ou correções para o projeto, siga os passos abaixo:</p>
-    <ol>
-        <li>Faça o fork do repositório.</li>
-        <li>Crie uma branch para sua feature:
-            <pre><code>git checkout -b nome-da-sua-feature</code></pre>
-        </li>
-        <li>Adicione suas mudanças:
-            <pre><code>git add .</code></pre>
-        </li>
-        <li>Comite as alterações:
-            <pre><code>git commit -m "Descrição das alterações"</code></pre>
-        </li>
-        <li>Faça o push para o seu repositório:
-            <pre><code>git push origin nome-da-sua-feature</code></pre>
-        </li>
-        <li>Crie um pull request com suas alterações.</li>
-    </ol>
+  <h2>Como Contribuir</h2>
+  <p>Se você deseja contribuir com melhorias ou correções para o projeto, siga os passos abaixo:</p>
+  <ol>
+   <li>Faça o fork do repositório.</li>
+   <li>Crie uma branch para sua feature:
+   <pre><code>git checkout -b nome-da-sua-feature</code></pre>
+   </li>
+   <li>Adicione suas mudanças:
+   <pre><code>git add .</code></pre>
+   </li>
+   <li>Comite as alterações:
+   <pre><code>git commit -m "Descrição das alterações"</code></pre>
+  </li>
+   <li>Faça o push para o seu repositório:
+   <pre><code>git push origin nome-da-sua-feature</code></pre>
+   </li>
+  <li>Crie um pull request com suas alterações.</li>
+   </ol>
 
-    <h2>Licença</h2>
-    <p>Este projeto está licenciado sob a licença MIT - veja o arquivo <a href="LICENSE">LICENSE</a> para mais detalhes.</p>
+ <h2>Licença</h2>
+   
+ <p>Este projeto está licenciado sob a licença MIT - veja o arquivo <a href="LICENSE">LICENSE</a> para mais detalhes.</p>
 
-    <h2>Agradecimentos</h2>
-    <p>Agradeço a todos que contribuíram para o projeto e as tecnologias que possibilitaram sua criação.</p>
+<h2>Agradecimentos</h2>
+<p>Agradeço a todos que contribuíram para o projeto e as tecnologias que possibilitaram sua criação.</p>
 </body>
