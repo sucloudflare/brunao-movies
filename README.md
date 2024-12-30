@@ -1,4 +1,4 @@
- <h1>brunao-movies</h1>
+ <h1>Brunao-movies</h1>
     <p>Este é um projeto de uma aplicação de filmes, onde os usuários podem explorar filmes populares, assistir trailers, e acessar informações detalhadas sobre os filmes. A aplicação consome dados de uma API externa, como o TMDB, para fornecer informações atualizadas sobre filmes.</p>
 
  <h2>Funcionalidades</h2>
