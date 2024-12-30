@@ -10,7 +10,7 @@ import tmdbApi, { category, movieType } from '../../api/tmdbApi';
 import apiConfig from '../../api/apiConfig';
 
 import './hero-slide.scss';
-import { useHistory } from 'react-router';
+import { useNavigate } from 'react-router-dom'; // Substituir useHistory por useNavigate
 
 const HeroSlide = () => {
 
@@ -20,15 +20,15 @@ const HeroSlide = () => {
 
     useEffect(() => {
         const getMovies = async () => {
-            const params = {page: 1}
+            const params = { page: 1 };
             try {
-                const response = await tmdbApi.getMoviesList(movieType.popular, {params});
+                const response = await tmdbApi.getMoviesList(movieType.popular, { params });
                 setMovieItems(response.results.slice(1, 4));
                 console.log(response);
             } catch {
-                console.log('error');
+                console.log('erro');
             }
-        }
+        };
         getMovies();
     }, []);
 
@@ -39,7 +39,6 @@ const HeroSlide = () => {
                 grabCursor={true}
                 spaceBetween={0}
                 slidesPerView={1}
-                // autoplay={{delay: 3000}}
             >
                 {
                     movieItems.map((item, i) => (
@@ -52,7 +51,7 @@ const HeroSlide = () => {
                 }
             </Swiper>
             {
-                movieItems.map((item, i) => <TrailerModal key={i} item={item}/>)
+                movieItems.map((item, i) => <TrailerModal key={i} item={item} />)
             }
         </div>
     );
@@ -60,7 +59,7 @@ const HeroSlide = () => {
 
 const HeroSlideItem = props => {
 
-    let hisrory = useHistory();
+    let navigate = useNavigate(); // Alterar para useNavigate
 
     const item = props.item;
 
@@ -75,7 +74,7 @@ const HeroSlideItem = props => {
             const videSrc = 'https://www.youtube.com/embed/' + videos.results[0].key;
             modal.querySelector('.modal__content > iframe').setAttribute('src', videSrc);
         } else {
-            modal.querySelector('.modal__content').innerHTML = 'No trailer';
+            modal.querySelector('.modal__content').innerHTML = 'Sem trailer';
         }
 
         modal.classList.toggle('active');
@@ -84,18 +83,18 @@ const HeroSlideItem = props => {
     return (
         <div
             className={`hero-slide__item ${props.className}`}
-            style={{backgroundImage: `url(${background})`}}
+            style={{ backgroundImage: `url(${background})` }}
         >
             <div className="hero-slide__item__content container">
                 <div className="hero-slide__item__content__info">
                     <h2 className="title">{item.title}</h2>
                     <div className="overview">{item.overview}</div>
                     <div className="btns">
-                        <Button onClick={() => hisrory.push('/movie/' + item.id)}>
-                            Watch now
+                        <Button onClick={() => navigate('/movie/' + item.id)}>  {/* Alterar history.push para navigate */}
+                            Assistir agora
                         </Button>
                         <OutlineButton onClick={setModalActive}>
-                            Watch trailer
+                            Assistir trailer
                         </OutlineButton>
                     </div>
                 </div>

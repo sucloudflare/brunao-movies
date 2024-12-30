@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { useHistory, useParams } from 'react-router';
+import { useNavigate, useParams } from 'react-router-dom'; // Alterar useHistory para useNavigate
 
 import './movie-grid.scss';
 
@@ -89,17 +89,17 @@ const MovieGrid = props => {
 
 const MovieSearch = props => {
 
-    const history = useHistory();
+    const navigate = useNavigate(); // Alterado de useHistory para useNavigate
 
     const [keyword, setKeyword] = useState(props.keyword ? props.keyword : '');
 
     const goToSearch = useCallback(
         () => {
             if (keyword.trim().length > 0) {
-                history.push(`/${category[props.category]}/search/${keyword}`);
+                navigate(`/${category[props.category]}/search/${keyword}`); // Alterado de history.push para navigate
             }
         },
-        [keyword, props.category, history]
+        [keyword, props.category, navigate] // Atualizado para incluir navigate
     );
 
     useEffect(() => {

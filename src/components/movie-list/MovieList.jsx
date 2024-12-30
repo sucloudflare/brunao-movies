@@ -4,12 +4,8 @@ import PropTypes from 'prop-types';
 import './movie-list.scss';
 
 import { SwiperSlide, Swiper } from 'swiper/react';
-import { Link } from 'react-router-dom';
-
-import Button from '../button/Button';
 
 import tmdbApi, { category } from '../../api/tmdbApi';
-import apiConfig from '../../api/apiConfig';
 
 import MovieCard from '../movie-card/MovieCard';
 
@@ -36,7 +32,7 @@ const MovieList = props => {
             setItems(response.results);
         }
         getList();
-    }, []);
+    }, [props.category, props.type, props.id]); // Corrigido para incluir as dependências no useEffect
 
     return (
         <div className="movie-list">
@@ -59,7 +55,8 @@ const MovieList = props => {
 
 MovieList.propTypes = {
     category: PropTypes.string.isRequired,
-    type: PropTypes.string.isRequired
+    type: PropTypes.string.isRequired,
+    id: PropTypes.number // Adicionado a propriedade `id` com tipo `number`
 }
 
 export default MovieList;
